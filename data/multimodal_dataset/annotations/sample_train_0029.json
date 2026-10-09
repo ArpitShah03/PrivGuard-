@@ -1,0 +1,101 @@
+{
+  "sample_id": "sample_train_0029",
+  "split": "train",
+  "category": "masked_pii",
+  "document_modality": "DOCX-LIKE PAGE",
+  "text_content": "Audit log: Customer verification completed. SSN: 98X-XX-XX21, Credit Card on file: 4532-XXXX-XXXX-1122, Email confirmation sent to deepa****@example.com.",
+  "document_info": {
+    "document_title": "Customer Account Redacted Statement",
+    "file_type": "docx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0045",
+      "sample_id": "sample_train_0029",
+      "block_type": "paragraph",
+      "text": "Audit log: Customer verification completed. SSN: 98X-XX-XX21, Credit Card on file: 4532-XXXX-XXXX-1122, Email confirmation sent to deepa****@example.com.",
+      "bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0101",
+      "sample_id": "sample_train_0029",
+      "pii_type": "SSN",
+      "text": "98X-XX-XX21",
+      "normalized_text": "000-11-9921",
+      "bbox": [
+        0.45,
+        0.16,
+        0.62,
+        0.21
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": true,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": null,
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0102",
+      "sample_id": "sample_train_0029",
+      "pii_type": "CREDIT_CARD",
+      "text": "4532-XXXX-XXXX-1122",
+      "normalized_text": "4532-0150-9988-1122",
+      "bbox": [
+        0.1,
+        0.22,
+        0.45,
+        0.27
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": true,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": null,
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0103",
+      "sample_id": "sample_train_0029",
+      "pii_type": "EMAIL",
+      "text": "deepa****@example.com",
+      "normalized_text": "deepa.narayan@example.com",
+      "bbox": [
+        0.65,
+        0.22,
+        0.92,
+        0.27
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": true,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": null,
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

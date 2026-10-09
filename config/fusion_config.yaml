@@ -1,0 +1,39 @@
+# Phase 5C: Detector Fusion & Confidence Calibration Configuration
+
+fusion:
+  # Decision thresholds for calibrated confidence
+  # Policy Hierarchy:
+  # 1. Extraction uncertainty -> HUMAN_REVIEW
+  # 2. Strong deterministic -> DETECT
+  # 3. Calibrated score >= high_threshold -> DETECT
+  # 4. Calibrated score >= lower_threshold -> HUMAN_REVIEW
+  # 5. Otherwise -> SUPPRESS
+  high_threshold: 0.70
+  lower_threshold: 0.45
+
+calibration:
+  method: "platt_scaling"
+  fit_on_split: "validation"
+  bins: 10
+  model_dir: "models/fusion"
+
+# Initial configurable detector reliability weights.
+# NOTE: These weights are initial baseline configuration assumptions,
+# NOT scientifically claimed as optimal.
+weights:
+  algorithmic: 1.00
+  regex: 0.90
+  multimodal: 0.85
+  spacy: 0.75
+  context: 0.80
+  masked_pii: 0.80
+  entity_resolution: 0.85
+
+security_policy:
+  fail_closed_on_error: true
+  fail_closed_on_missing_model: true
+  deterministic_dominance: true
+  extraction_uncertainty_priority: true
+  token_immunity_enabled: true
+  suppress_corporate_stopwords: true
+  strict_synthetic_privacy: true

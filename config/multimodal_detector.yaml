@@ -1,0 +1,33 @@
+# Multimodal / Layout-Aware PII Detector Configuration
+
+model:
+  type: "LightweightCalibratedDetector"
+  version: "1.0.0"
+  artifact_path: "models/multimodal/detector.joblib"
+  config_path: "models/multimodal/feature_config.json"
+  metadata_path: "models/multimodal/model_metadata.json"
+
+thresholds:
+  high_confidence: 0.85
+  medium_confidence: 0.65
+  low_confidence: 0.45
+  default_decision_threshold: 0.65
+
+weights:
+  text_pattern: 0.35
+  layout_context: 0.25
+  table_context: 0.15
+  ocr_evidence: 0.10
+  relationship_context: 0.15
+
+security_policy:
+  fail_closed_on_error: true
+  fail_closed_on_missing_model: true
+  token_immunity_enabled: true
+  suppress_corporate_nouns: true
+  strict_synthetic_privacy: true
+
+context_window:
+  max_neighboring_blocks: 2
+  max_horizontal_distance: 0.30
+  max_vertical_distance: 0.20

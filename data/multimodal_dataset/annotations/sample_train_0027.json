@@ -1,0 +1,172 @@
+{
+  "sample_id": "sample_train_0027",
+  "split": "train",
+  "category": "screenshot_ocr",
+  "document_modality": "IMAGE/OCR",
+  "text_content": "[CRM PROFILE]\nFull Name: Nikhil Kamath\nAccount Email: nikhil.kamath@example.com\nPhone: +1-555-019-1102\nBadge: EMP-90214\nOffice: 77 Tech Park, Hyderabad",
+  "document_info": {
+    "document_title": "Internal CRM User Profile Snapshot",
+    "file_type": "png",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0041",
+      "sample_id": "sample_train_0027",
+      "block_type": "image_region",
+      "text": "[CRM PROFILE]\nFull Name: Nikhil Kamath\nAccount Email: nikhil.kamath@example.com\nPhone: +1-555-019-1102\nBadge: EMP-90214\nOffice: 77 Tech Park, Hyderabad",
+      "bbox": [
+        0.12,
+        0.18,
+        0.88,
+        0.82
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": true,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0089",
+      "sample_id": "sample_train_0027",
+      "pii_type": "PERSON",
+      "text": "Nikhil Kamath",
+      "normalized_text": "Nikhil Kamath",
+      "bbox": [
+        0.25,
+        0.25,
+        0.5,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0027",
+      "relationship_ids": [
+        "rel_train_0035"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0090",
+      "sample_id": "sample_train_0027",
+      "pii_type": "EMAIL",
+      "text": "nikhil.kamath@example.com",
+      "normalized_text": "nikhil.kamath@example.com",
+      "bbox": [
+        0.3,
+        0.35,
+        0.65,
+        0.4
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0027",
+      "relationship_ids": [
+        "rel_train_0035"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0091",
+      "sample_id": "sample_train_0027",
+      "pii_type": "PHONE",
+      "text": "+1-555-019-1102",
+      "normalized_text": "+1-555-019-1102",
+      "bbox": [
+        0.25,
+        0.45,
+        0.5,
+        0.5
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0027",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0092",
+      "sample_id": "sample_train_0027",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-90214",
+      "normalized_text": "EMP-90214",
+      "bbox": [
+        0.25,
+        0.55,
+        0.45,
+        0.6
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0027",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0093",
+      "sample_id": "sample_train_0027",
+      "pii_type": "ADDRESS",
+      "text": "77 Tech Park, Hyderabad",
+      "normalized_text": "77 Tech Park, Hyderabad",
+      "bbox": [
+        0.25,
+        0.65,
+        0.55,
+        0.7
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0027",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0035",
+      "sample_id": "sample_train_0027",
+      "source_annotation_id": "ann_train_0089",
+      "target_annotation_id": "ann_train_0090",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "OCR Card Profile attributes"
+    }
+  ],
+  "visuals": [
+    {
+      "visual_id": "vis_train_0005",
+      "sample_id": "sample_train_0027",
+      "visual_type": "screenshot",
+      "bbox": [
+        0.1,
+        0.15,
+        0.9,
+        0.85
+      ],
+      "page_or_slide": 1,
+      "has_embedded_text": true,
+      "ocr_confidence": 0.92,
+      "metadata": {}
+    }
+  ],
+  "is_hard_negative": false,
+  "metadata": {}
+}

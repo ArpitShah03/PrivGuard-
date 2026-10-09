@@ -1,0 +1,101 @@
+{
+  "sample_id": "sample_train_0009",
+  "split": "train",
+  "category": "similar_names",
+  "document_modality": "DOCX-LIKE PAGE",
+  "text_content": "Interview Roster for Senior Analyst:\nCandidate 1: David Kim (ID: EMP-101)\nCandidate 2: David Klein (ID: EMP-102)\nCandidate 3: David Kuhn (ID: EMP-103)",
+  "document_info": {
+    "document_title": "Candidate Evaluation Roster",
+    "file_type": "docx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0017",
+      "sample_id": "sample_train_0009",
+      "block_type": "paragraph",
+      "text": "Interview Roster for Senior Analyst:\nCandidate 1: David Kim (ID: EMP-101)\nCandidate 2: David Klein (ID: EMP-102)\nCandidate 3: David Kuhn (ID: EMP-103)",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0040",
+      "sample_id": "sample_train_0009",
+      "pii_type": "PERSON",
+      "text": "David Kim",
+      "normalized_text": "David Kim",
+      "bbox": [
+        0.22,
+        0.14,
+        0.45,
+        0.18
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0012",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0041",
+      "sample_id": "sample_train_0009",
+      "pii_type": "PERSON",
+      "text": "David Klein",
+      "normalized_text": "David Klein",
+      "bbox": [
+        0.22,
+        0.2,
+        0.45,
+        0.24
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0013",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0042",
+      "sample_id": "sample_train_0009",
+      "pii_type": "PERSON",
+      "text": "David Kuhn",
+      "normalized_text": "David Kuhn",
+      "bbox": [
+        0.22,
+        0.26,
+        0.45,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0014",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

@@ -1,0 +1,172 @@
+{
+  "sample_id": "sample_train_0005",
+  "split": "train",
+  "category": "screenshot_ocr",
+  "document_modality": "IMAGE/OCR",
+  "text_content": "[CRM PROFILE]\nFull Name: Maya Lin\nAccount Email: maya.lin@example.com\nPhone: +1-555-019-9941\nBadge: EMP-55194\nOffice: 104 Corporate Blvd, Austin, TX",
+  "document_info": {
+    "document_title": "Internal CRM User Profile Snapshot",
+    "file_type": "png",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0013",
+      "sample_id": "sample_train_0005",
+      "block_type": "image_region",
+      "text": "[CRM PROFILE]\nFull Name: Maya Lin\nAccount Email: maya.lin@example.com\nPhone: +1-555-019-9941\nBadge: EMP-55194\nOffice: 104 Corporate Blvd, Austin, TX",
+      "bbox": [
+        0.12,
+        0.18,
+        0.88,
+        0.82
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": true,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0027",
+      "sample_id": "sample_train_0005",
+      "pii_type": "PERSON",
+      "text": "Maya Lin",
+      "normalized_text": "Maya Lin",
+      "bbox": [
+        0.25,
+        0.25,
+        0.5,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0009",
+      "relationship_ids": [
+        "rel_train_0014"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0028",
+      "sample_id": "sample_train_0005",
+      "pii_type": "EMAIL",
+      "text": "maya.lin@example.com",
+      "normalized_text": "maya.lin@example.com",
+      "bbox": [
+        0.3,
+        0.35,
+        0.65,
+        0.4
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0009",
+      "relationship_ids": [
+        "rel_train_0014"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0029",
+      "sample_id": "sample_train_0005",
+      "pii_type": "PHONE",
+      "text": "+1-555-019-9941",
+      "normalized_text": "+1-555-019-9941",
+      "bbox": [
+        0.25,
+        0.45,
+        0.5,
+        0.5
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0009",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0030",
+      "sample_id": "sample_train_0005",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-55194",
+      "normalized_text": "EMP-55194",
+      "bbox": [
+        0.25,
+        0.55,
+        0.45,
+        0.6
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0009",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0031",
+      "sample_id": "sample_train_0005",
+      "pii_type": "ADDRESS",
+      "text": "104 Corporate Blvd, Austin, TX",
+      "normalized_text": "104 Corporate Blvd, Austin, TX",
+      "bbox": [
+        0.25,
+        0.65,
+        0.55,
+        0.7
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0009",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0014",
+      "sample_id": "sample_train_0005",
+      "source_annotation_id": "ann_train_0027",
+      "target_annotation_id": "ann_train_0028",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "OCR Card Profile attributes"
+    }
+  ],
+  "visuals": [
+    {
+      "visual_id": "vis_train_0003",
+      "sample_id": "sample_train_0005",
+      "visual_type": "screenshot",
+      "bbox": [
+        0.1,
+        0.15,
+        0.9,
+        0.85
+      ],
+      "page_or_slide": 1,
+      "has_embedded_text": true,
+      "ocr_confidence": 0.92,
+      "metadata": {}
+    }
+  ],
+  "is_hard_negative": false,
+  "metadata": {}
+}

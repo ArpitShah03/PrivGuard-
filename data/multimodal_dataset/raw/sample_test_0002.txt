@@ -1,0 +1,10 @@
+Chief Executive: Sunita Deshmukh
+Email: sunita.deshmukh@example.com
+DIN: 03948572
+---
+VP Operations: Lucas Lindgren
+Email: lucas.lindgren@example.com
+Emp ID: EMP-30920
+---
+Lead Architect: Gaurav Sen
+Emp ID: EMP-30921

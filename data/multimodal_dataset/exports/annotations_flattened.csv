@@ -1,0 +1,120 @@
+sample_id,split,category,document_modality,annotation_id,pii_type,text,normalized_text,x1,y1,x2,y2,page_or_slide,source,confidence_ground_truth,is_masked,is_indirect,is_partial,entity_id,relationship_ids
+sample_train_0001,train,plain_text,TEXT,ann_train_0001,PERSON,Vikram Malhotra,Vikram Malhotra,0.05,0.1,0.25,0.14,1,native_text,1.0,False,False,False,entity_train_0001,rel_train_0001;rel_train_0002
+sample_train_0001,train,plain_text,TEXT,ann_train_0002,EMAIL,vikram.malhotra@example.com,vikram.malhotra@example.com,0.4,0.1,0.65,0.14,1,native_text,1.0,False,False,False,entity_train_0001,rel_train_0001
+sample_train_0001,train,plain_text,TEXT,ann_train_0003,PHONE,+1-555-019-2041,+1-555-019-2041,0.7,0.1,0.9,0.14,1,native_text,1.0,False,False,False,entity_train_0001,
+sample_train_0001,train,plain_text,TEXT,ann_train_0004,SSN,000-45-7821,000-45-7821,0.35,0.15,0.55,0.19,1,native_text,1.0,False,False,False,entity_train_0001,rel_train_0002
+sample_train_0002,train,tabular,TABLE,ann_train_0005,PERSON,Kavita Patel,Kavita Patel,0.05,0.22,0.28,0.28,1,table,1.0,False,False,False,entity_train_0002,rel_train_0003;rel_train_0004
+sample_train_0002,train,tabular,TABLE,ann_train_0006,EMAIL,kavita.patel@example.com,kavita.patel@example.com,0.3,0.22,0.55,0.28,1,table,1.0,False,False,False,entity_train_0002,rel_train_0003
+sample_train_0002,train,tabular,TABLE,ann_train_0007,PHONE,+1-555-019-3329,+1-555-019-3329,0.58,0.22,0.78,0.28,1,table,1.0,False,False,False,entity_train_0002,
+sample_train_0002,train,tabular,TABLE,ann_train_0008,IFSC,HDFC0004123,HDFC0004123,0.8,0.22,0.95,0.28,1,table,1.0,False,False,False,entity_train_0002,rel_train_0004
+sample_train_0002,train,tabular,TABLE,ann_train_0009,PERSON,Aarav Sen,Aarav Sen,0.05,0.3,0.28,0.36,1,table,1.0,False,False,False,entity_train_0003,rel_train_0005;rel_train_0006
+sample_train_0002,train,tabular,TABLE,ann_train_0010,EMAIL,aarav.sen@example.com,aarav.sen@example.com,0.3,0.3,0.55,0.36,1,table,1.0,False,False,False,entity_train_0003,rel_train_0005
+sample_train_0002,train,tabular,TABLE,ann_train_0011,PHONE,+1-555-019-8812,+1-555-019-8812,0.58,0.3,0.78,0.36,1,table,1.0,False,False,False,entity_train_0003,
+sample_train_0002,train,tabular,TABLE,ann_train_0012,IFSC,ICIC0001928,ICIC0001928,0.8,0.3,0.95,0.36,1,table,1.0,False,False,False,entity_train_0003,rel_train_0006
+sample_train_0002,train,tabular,TABLE,ann_train_0013,PERSON,Priya Nair,Priya Nair,0.05,0.38,0.28,0.44,1,table,1.0,False,False,False,entity_train_0004,rel_train_0007;rel_train_0008
+sample_train_0002,train,tabular,TABLE,ann_train_0014,EMAIL,priya.nair@example.com,priya.nair@example.com,0.3,0.38,0.55,0.44,1,table,1.0,False,False,False,entity_train_0004,rel_train_0007
+sample_train_0002,train,tabular,TABLE,ann_train_0015,PHONE,+1-555-019-5501,+1-555-019-5501,0.58,0.38,0.78,0.44,1,table,1.0,False,False,False,entity_train_0004,
+sample_train_0002,train,tabular,TABLE,ann_train_0016,IFSC,SBIN0008821,SBIN0008821,0.8,0.38,0.95,0.44,1,table,1.0,False,False,False,entity_train_0004,rel_train_0008
+sample_train_0003,train,split_layout,PPTX-LIKE SLIDE,ann_train_0017,PERSON,Marcus,Marcus Vance,0.1,0.2,0.3,0.3,1,shape,1.0,False,False,True,entity_train_0005,rel_train_0009;rel_train_0010
+sample_train_0003,train,split_layout,PPTX-LIKE SLIDE,ann_train_0018,PERSON,Vance,Marcus Vance,0.32,0.2,0.55,0.3,1,shape,1.0,False,False,True,entity_train_0005,rel_train_0009
+sample_train_0003,train,split_layout,PPTX-LIKE SLIDE,ann_train_0019,EMPLOYEE_ID,EMP-10291,EMP-10291,0.28,0.35,0.5,0.45,1,shape,1.0,False,False,False,entity_train_0005,rel_train_0010
+sample_train_0004,train,org_chart,PPTX-LIKE SLIDE,ann_train_0020,PERSON,Elena Rostova,Elena Rostova,0.45,0.1,0.65,0.15,1,shape,1.0,False,False,False,entity_train_0006,rel_train_0011;rel_train_0013
+sample_train_0004,train,org_chart,PPTX-LIKE SLIDE,ann_train_0021,EMAIL,elena.rostova@example.com,elena.rostova@example.com,0.42,0.15,0.65,0.2,1,shape,1.0,False,False,False,entity_train_0006,
+sample_train_0004,train,org_chart,PPTX-LIKE SLIDE,ann_train_0022,DIRECTOR_ID,00928341,00928341,0.42,0.2,0.6,0.25,1,shape,1.0,False,False,False,entity_train_0006,rel_train_0013
+sample_train_0004,train,org_chart,PPTX-LIKE SLIDE,ann_train_0023,PERSON,Rajesh Khanna,Rajesh Khanna,0.45,0.4,0.65,0.45,1,shape,1.0,False,False,False,entity_train_0007,rel_train_0011;rel_train_0012
+sample_train_0004,train,org_chart,PPTX-LIKE SLIDE,ann_train_0024,EMPLOYEE_ID,EMP-77123,EMP-77123,0.45,0.5,0.62,0.55,1,shape,1.0,False,False,False,entity_train_0007,
+sample_train_0004,train,org_chart,PPTX-LIKE SLIDE,ann_train_0025,PERSON,Arjun Singhania,Arjun Singhania,0.45,0.7,0.65,0.75,1,shape,1.0,False,False,False,entity_train_0008,rel_train_0012
+sample_train_0004,train,org_chart,PPTX-LIKE SLIDE,ann_train_0026,EMPLOYEE_ID,EMP-66102,EMP-66102,0.45,0.78,0.62,0.83,1,shape,1.0,False,False,False,entity_train_0008,
+sample_train_0005,train,screenshot_ocr,IMAGE/OCR,ann_train_0027,PERSON,Maya Lin,Maya Lin,0.25,0.25,0.5,0.3,1,OCR,1.0,False,False,False,entity_train_0009,rel_train_0014
+sample_train_0005,train,screenshot_ocr,IMAGE/OCR,ann_train_0028,EMAIL,maya.lin@example.com,maya.lin@example.com,0.3,0.35,0.65,0.4,1,OCR,1.0,False,False,False,entity_train_0009,rel_train_0014
+sample_train_0005,train,screenshot_ocr,IMAGE/OCR,ann_train_0029,PHONE,+1-555-019-9941,+1-555-019-9941,0.25,0.45,0.5,0.5,1,OCR,1.0,False,False,False,entity_train_0009,
+sample_train_0005,train,screenshot_ocr,IMAGE/OCR,ann_train_0030,EMPLOYEE_ID,EMP-55194,EMP-55194,0.25,0.55,0.45,0.6,1,OCR,1.0,False,False,False,entity_train_0009,
+sample_train_0005,train,screenshot_ocr,IMAGE/OCR,ann_train_0031,ADDRESS,"104 Corporate Blvd, Austin, TX","104 Corporate Blvd, Austin, TX",0.25,0.65,0.55,0.7,1,OCR,1.0,False,False,False,entity_train_0009,
+sample_train_0006,train,ocr_noisy,IMAGE/OCR,ann_train_0032,PAN,ABCPEI234K,ABCPE1234K,0.25,0.2,0.48,0.26,1,OCR,1.0,False,False,False,,
+sample_train_0006,train,ocr_noisy,IMAGE/OCR,ann_train_0033,SSN,000-4S-782I,000-45-7821,0.65,0.2,0.88,0.26,1,OCR,1.0,False,False,False,,
+sample_train_0007,train,masked_pii,DOCX-LIKE PAGE,ann_train_0034,SSN,XXX-XX-1234,000-12-1234,0.45,0.16,0.62,0.21,1,native_text,1.0,True,False,False,,
+sample_train_0007,train,masked_pii,DOCX-LIKE PAGE,ann_train_0035,CREDIT_CARD,**** **** **** 4512,4532-0150-1234-4512,0.1,0.22,0.45,0.27,1,native_text,1.0,True,False,False,,
+sample_train_0007,train,masked_pii,DOCX-LIKE PAGE,ann_train_0036,EMAIL,carlos****@example.com,carlos.mendoza@example.com,0.65,0.22,0.92,0.27,1,native_text,1.0,True,False,False,,
+sample_train_0008,train,indirect_context,DOCX-LIKE PAGE,ann_train_0037,EMPLOYEE_ID,EMP-44109,EMP-44109,0.25,0.14,0.45,0.18,1,native_text,1.0,False,False,False,entity_train_0010,rel_train_0015;rel_train_0016
+sample_train_0008,train,indirect_context,DOCX-LIKE PAGE,ann_train_0038,PERSON,Amit Trivedi,Amit Trivedi,0.4,0.22,0.65,0.26,1,native_text,1.0,False,False,False,entity_train_0011,rel_train_0015
+sample_train_0008,train,indirect_context,DOCX-LIKE PAGE,ann_train_0039,SECRET,a8f9c2d1e0b4a7c9d3e5f1b29a8c7e6d,a8f9c2d1e0b4a7c9d3e5f1b29a8c7e6d,0.42,0.28,0.9,0.32,1,native_text,1.0,False,False,False,entity_train_0010,rel_train_0016
+sample_train_0009,train,similar_names,DOCX-LIKE PAGE,ann_train_0040,PERSON,David Kim,David Kim,0.22,0.14,0.45,0.18,1,native_text,1.0,False,False,False,entity_train_0012,
+sample_train_0009,train,similar_names,DOCX-LIKE PAGE,ann_train_0041,PERSON,David Klein,David Klein,0.22,0.2,0.45,0.24,1,native_text,1.0,False,False,False,entity_train_0013,
+sample_train_0009,train,similar_names,DOCX-LIKE PAGE,ann_train_0042,PERSON,David Kuhn,David Kuhn,0.22,0.26,0.45,0.3,1,native_text,1.0,False,False,False,entity_train_0014,
+sample_train_0010,train,entity_resolution,PDF-LIKE PAGE,ann_train_0043,PERSON,Meera Joshi,Meera Joshi,0.35,0.15,0.6,0.2,1,native_text,1.0,False,False,False,entity_train_0015,rel_train_0017
+sample_train_0010,train,entity_resolution,PDF-LIKE PAGE,ann_train_0044,EMAIL,meera.joshi@example.com,meera.joshi@example.com,0.72,0.15,0.95,0.2,1,native_text,1.0,False,False,False,entity_train_0015,
+sample_train_0010,train,entity_resolution,PDF-LIKE PAGE,ann_train_0045,PERSON,M. Joshi,Meera Joshi,0.42,0.3,0.62,0.35,1,native_text,1.0,False,False,False,entity_train_0015,rel_train_0017
+sample_train_0010,train,entity_resolution,PDF-LIKE PAGE,ann_train_0046,EMPLOYEE_ID,EMP-33219,EMP-33219,0.72,0.3,0.9,0.35,1,native_text,1.0,False,False,False,entity_train_0015,
+sample_train_0011,train,metadata_pii,DOCX-LIKE PAGE,ann_train_0047,PERSON,Deepak Verma,Deepak Verma,0.0,0.0,0.0,0.0,1,metadata,1.0,False,False,False,entity_train_0016,rel_train_0018
+sample_train_0011,train,metadata_pii,DOCX-LIKE PAGE,ann_train_0048,EMAIL,deepak.verma@example.com,deepak.verma@example.com,0.0,0.0,0.0,0.0,1,metadata,1.0,False,False,False,entity_train_0016,rel_train_0018
+sample_train_0012,train,national_financial,PDF-LIKE PAGE,ann_train_0069,PESEL,90051412347,90051412347,0.25,0.1,0.45,0.15,1,native_text,1.0,False,False,False,entity_train_0017,rel_train_0027
+sample_train_0012,train,national_financial,PDF-LIKE PAGE,ann_train_0070,PASSPORT,Z9182341,Z9182341,0.55,0.1,0.75,0.15,1,native_text,1.0,False,False,False,entity_train_0017,
+sample_train_0012,train,national_financial,PDF-LIKE PAGE,ann_train_0071,PAN,AAACC9981M,AAACC9981M,0.25,0.18,0.5,0.23,1,native_text,1.0,False,False,False,entity_train_0017,
+sample_train_0012,train,national_financial,PDF-LIKE PAGE,ann_train_0072,BANK_ACCOUNT,987654321098,987654321098,0.6,0.18,0.85,0.23,1,native_text,1.0,False,False,False,entity_train_0017,rel_train_0027
+sample_train_0017,train,corporate_identifiers,DOCX-LIKE PAGE,ann_train_0073,VENDOR_ID,VEND-49201,VEND-49201,0.35,0.15,0.55,0.2,1,native_text,1.0,False,False,False,entity_train_0022,rel_train_0028
+sample_train_0017,train,corporate_identifiers,DOCX-LIKE PAGE,ann_train_0074,CUSTOMER_ID,CUST-88102,CUST-88102,0.7,0.15,0.9,0.2,1,native_text,1.0,False,False,False,entity_train_0022,rel_train_0028
+sample_train_0017,train,corporate_identifiers,DOCX-LIKE PAGE,ann_train_0075,DIRECTOR_ID,01827364,01827364,0.35,0.25,0.55,0.3,1,native_text,1.0,False,False,False,entity_train_0022,
+sample_train_0018,train,tabular,TABLE,ann_train_0076,PERSON,Suresh Raina,Suresh Raina,0.05,0.22,0.28,0.28,1,table,1.0,False,False,False,entity_train_0023,rel_train_0029;rel_train_0030
+sample_train_0018,train,tabular,TABLE,ann_train_0077,EMAIL,suresh.raina@example.com,suresh.raina@example.com,0.3,0.22,0.55,0.28,1,table,1.0,False,False,False,entity_train_0023,rel_train_0029
+sample_train_0018,train,tabular,TABLE,ann_train_0078,PHONE,+1-555-019-6632,+1-555-019-6632,0.58,0.22,0.78,0.28,1,table,1.0,False,False,False,entity_train_0023,
+sample_train_0018,train,tabular,TABLE,ann_train_0079,IFSC,KKBK0001829,KKBK0001829,0.8,0.22,0.95,0.28,1,table,1.0,False,False,False,entity_train_0023,rel_train_0030
+sample_train_0018,train,tabular,TABLE,ann_train_0080,PERSON,Anil Kumble,Anil Kumble,0.05,0.3,0.28,0.36,1,table,1.0,False,False,False,entity_train_0024,rel_train_0031;rel_train_0032
+sample_train_0018,train,tabular,TABLE,ann_train_0081,EMAIL,anil.kumble@example.com,anil.kumble@example.com,0.3,0.3,0.55,0.36,1,table,1.0,False,False,False,entity_train_0024,rel_train_0031
+sample_train_0018,train,tabular,TABLE,ann_train_0082,PHONE,+1-555-019-7741,+1-555-019-7741,0.58,0.3,0.78,0.36,1,table,1.0,False,False,False,entity_train_0024,
+sample_train_0018,train,tabular,TABLE,ann_train_0083,IFSC,UTIB0002931,UTIB0002931,0.8,0.3,0.95,0.36,1,table,1.0,False,False,False,entity_train_0024,rel_train_0032
+sample_train_0019,train,plain_text,TEXT,ann_train_0084,PERSON,Pooja Hegde,Pooja Hegde,0.15,0.1,0.35,0.15,1,native_text,1.0,False,False,False,entity_train_0025,rel_train_0033
+sample_train_0019,train,plain_text,TEXT,ann_train_0085,DOB,1987-04-12,1987-04-12,0.45,0.1,0.65,0.15,1,native_text,1.0,False,False,False,entity_train_0025,rel_train_0033
+sample_train_0019,train,plain_text,TEXT,ann_train_0086,ADDRESS,"45 Residency Road, Bangalore","45 Residency Road, Bangalore",0.3,0.18,0.85,0.23,1,native_text,1.0,False,False,False,entity_train_0025,
+sample_train_0026,train,financial_banking,TEXT,ann_train_0087,PERSON,Sandeep Reddy,Sandeep Reddy,0.25,0.1,0.45,0.15,1,native_text,1.0,False,False,False,entity_train_0026,rel_train_0034
+sample_train_0026,train,financial_banking,TEXT,ann_train_0088,CREDIT_CARD,4532-0150-1234-5678,4532-0150-1234-5678,0.65,0.1,0.95,0.15,1,native_text,1.0,False,False,False,entity_train_0026,rel_train_0034
+sample_train_0027,train,screenshot_ocr,IMAGE/OCR,ann_train_0089,PERSON,Nikhil Kamath,Nikhil Kamath,0.25,0.25,0.5,0.3,1,OCR,1.0,False,False,False,entity_train_0027,rel_train_0035
+sample_train_0027,train,screenshot_ocr,IMAGE/OCR,ann_train_0090,EMAIL,nikhil.kamath@example.com,nikhil.kamath@example.com,0.3,0.35,0.65,0.4,1,OCR,1.0,False,False,False,entity_train_0027,rel_train_0035
+sample_train_0027,train,screenshot_ocr,IMAGE/OCR,ann_train_0091,PHONE,+1-555-019-1102,+1-555-019-1102,0.25,0.45,0.5,0.5,1,OCR,1.0,False,False,False,entity_train_0027,
+sample_train_0027,train,screenshot_ocr,IMAGE/OCR,ann_train_0092,EMPLOYEE_ID,EMP-90214,EMP-90214,0.25,0.55,0.45,0.6,1,OCR,1.0,False,False,False,entity_train_0027,
+sample_train_0027,train,screenshot_ocr,IMAGE/OCR,ann_train_0093,ADDRESS,"77 Tech Park, Hyderabad","77 Tech Park, Hyderabad",0.25,0.65,0.55,0.7,1,OCR,1.0,False,False,False,entity_train_0027,
+sample_train_0028,train,org_chart,PPTX-LIKE SLIDE,ann_train_0094,PERSON,Alok Sharma,Alok Sharma,0.45,0.1,0.65,0.15,1,shape,1.0,False,False,False,entity_train_0028,rel_train_0036;rel_train_0038
+sample_train_0028,train,org_chart,PPTX-LIKE SLIDE,ann_train_0095,EMAIL,alok.sharma@example.com,alok.sharma@example.com,0.42,0.15,0.65,0.2,1,shape,1.0,False,False,False,entity_train_0028,
+sample_train_0028,train,org_chart,PPTX-LIKE SLIDE,ann_train_0096,DIRECTOR_ID,01928374,01928374,0.42,0.2,0.6,0.25,1,shape,1.0,False,False,False,entity_train_0028,rel_train_0038
+sample_train_0028,train,org_chart,PPTX-LIKE SLIDE,ann_train_0097,PERSON,Kiran Rao,Kiran Rao,0.45,0.4,0.65,0.45,1,shape,1.0,False,False,False,entity_train_0029,rel_train_0036;rel_train_0037
+sample_train_0028,train,org_chart,PPTX-LIKE SLIDE,ann_train_0098,EMPLOYEE_ID,EMP-81029,EMP-81029,0.45,0.5,0.62,0.55,1,shape,1.0,False,False,False,entity_train_0029,
+sample_train_0028,train,org_chart,PPTX-LIKE SLIDE,ann_train_0099,PERSON,Tanvi Shah,Tanvi Shah,0.45,0.7,0.65,0.75,1,shape,1.0,False,False,False,entity_train_0030,rel_train_0037
+sample_train_0028,train,org_chart,PPTX-LIKE SLIDE,ann_train_0100,EMPLOYEE_ID,EMP-71928,EMP-71928,0.45,0.78,0.62,0.83,1,shape,1.0,False,False,False,entity_train_0030,
+sample_train_0029,train,masked_pii,DOCX-LIKE PAGE,ann_train_0101,SSN,98X-XX-XX21,000-11-9921,0.45,0.16,0.62,0.21,1,native_text,1.0,True,False,False,,
+sample_train_0029,train,masked_pii,DOCX-LIKE PAGE,ann_train_0102,CREDIT_CARD,4532-XXXX-XXXX-1122,4532-0150-9988-1122,0.1,0.22,0.45,0.27,1,native_text,1.0,True,False,False,,
+sample_train_0029,train,masked_pii,DOCX-LIKE PAGE,ann_train_0103,EMAIL,deepa****@example.com,deepa.narayan@example.com,0.65,0.22,0.92,0.27,1,native_text,1.0,True,False,False,,
+sample_validation_0001,validation,plain_text,TEXT,ann_validation_0001,PERSON,Ananya Roy,Ananya Roy,0.05,0.1,0.25,0.14,1,native_text,1.0,False,False,False,entity_validation_0001,rel_validation_0001;rel_validation_0002
+sample_validation_0001,validation,plain_text,TEXT,ann_validation_0002,EMAIL,ananya.roy@example.com,ananya.roy@example.com,0.4,0.1,0.65,0.14,1,native_text,1.0,False,False,False,entity_validation_0001,rel_validation_0001
+sample_validation_0001,validation,plain_text,TEXT,ann_validation_0003,PHONE,+1-555-011-8273,+1-555-011-8273,0.7,0.1,0.9,0.14,1,native_text,1.0,False,False,False,entity_validation_0001,
+sample_validation_0001,validation,plain_text,TEXT,ann_validation_0004,SSN,666-32-1192,666-32-1192,0.35,0.15,0.55,0.19,1,native_text,1.0,False,False,False,entity_validation_0001,rel_validation_0002
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0005,PERSON,Devendra Joshi,Devendra Joshi,0.05,0.22,0.28,0.28,1,table,1.0,False,False,False,entity_validation_0002,rel_validation_0003;rel_validation_0004
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0006,EMAIL,devendra.joshi@example.com,devendra.joshi@example.com,0.3,0.22,0.55,0.28,1,table,1.0,False,False,False,entity_validation_0002,rel_validation_0003
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0007,PHONE,+1-555-011-9928,+1-555-011-9928,0.58,0.22,0.78,0.28,1,table,1.0,False,False,False,entity_validation_0002,
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0008,IFSC,PUNB0001928,PUNB0001928,0.8,0.22,0.95,0.28,1,table,1.0,False,False,False,entity_validation_0002,rel_validation_0004
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0009,PERSON,Clara Schumann,Clara Schumann,0.05,0.3,0.28,0.36,1,table,1.0,False,False,False,entity_validation_0003,rel_validation_0005;rel_validation_0006
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0010,EMAIL,clara.schumann@example.com,clara.schumann@example.com,0.3,0.3,0.55,0.36,1,table,1.0,False,False,False,entity_validation_0003,rel_validation_0005
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0011,PHONE,+1-555-011-4401,+1-555-011-4401,0.58,0.3,0.78,0.36,1,table,1.0,False,False,False,entity_validation_0003,
+sample_validation_0002,validation,tabular,TABLE,ann_validation_0012,IFSC,BARB0003829,BARB0003829,0.8,0.3,0.95,0.36,1,table,1.0,False,False,False,entity_validation_0003,rel_validation_0006
+sample_validation_0003,validation,entity_resolution,PDF-LIKE PAGE,ann_validation_0013,PERSON,Siddharth Rao,Siddharth Rao,0.35,0.15,0.6,0.2,1,native_text,1.0,False,False,False,entity_validation_0004,rel_validation_0007
+sample_validation_0003,validation,entity_resolution,PDF-LIKE PAGE,ann_validation_0014,EMAIL,siddharth.rao@example.com,siddharth.rao@example.com,0.72,0.15,0.95,0.2,1,native_text,1.0,False,False,False,entity_validation_0004,
+sample_validation_0003,validation,entity_resolution,PDF-LIKE PAGE,ann_validation_0015,PERSON,S. Rao,Siddharth Rao,0.42,0.3,0.62,0.35,1,native_text,1.0,False,False,False,entity_validation_0004,rel_validation_0007
+sample_validation_0003,validation,entity_resolution,PDF-LIKE PAGE,ann_validation_0016,EMPLOYEE_ID,EMP-20492,EMP-20492,0.72,0.3,0.9,0.35,1,native_text,1.0,False,False,False,entity_validation_0004,
+sample_validation_0004,validation,ocr_noisy,IMAGE/OCR,ann_validation_0017,PAN,AAACC998IM,AAACC9981M,0.25,0.2,0.48,0.26,1,OCR,1.0,False,False,False,,
+sample_validation_0004,validation,ocr_noisy,IMAGE/OCR,ann_validation_0018,SSN,666-3Z-II92,666-32-1192,0.65,0.2,0.88,0.26,1,OCR,1.0,False,False,False,,
+sample_test_0001,test,plain_text,TEXT,ann_test_0001,PERSON,Rohan Kapoor,Rohan Kapoor,0.05,0.1,0.25,0.14,1,native_text,1.0,False,False,False,entity_test_0001,rel_test_0001;rel_test_0002
+sample_test_0001,test,plain_text,TEXT,ann_test_0002,EMAIL,rohan.kapoor@example.com,rohan.kapoor@example.com,0.4,0.1,0.65,0.14,1,native_text,1.0,False,False,False,entity_test_0001,rel_test_0001
+sample_test_0001,test,plain_text,TEXT,ann_test_0003,PHONE,+1-555-012-9944,+1-555-012-9944,0.7,0.1,0.9,0.14,1,native_text,1.0,False,False,False,entity_test_0001,
+sample_test_0001,test,plain_text,TEXT,ann_test_0004,SSN,900-44-8833,900-44-8833,0.35,0.15,0.55,0.19,1,native_text,1.0,False,False,False,entity_test_0001,rel_test_0002
+sample_test_0002,test,org_chart,PPTX-LIKE SLIDE,ann_test_0005,PERSON,Sunita Deshmukh,Sunita Deshmukh,0.45,0.1,0.65,0.15,1,shape,1.0,False,False,False,entity_test_0002,rel_test_0003;rel_test_0005
+sample_test_0002,test,org_chart,PPTX-LIKE SLIDE,ann_test_0006,EMAIL,sunita.deshmukh@example.com,sunita.deshmukh@example.com,0.42,0.15,0.65,0.2,1,shape,1.0,False,False,False,entity_test_0002,
+sample_test_0002,test,org_chart,PPTX-LIKE SLIDE,ann_test_0007,DIRECTOR_ID,03948572,03948572,0.42,0.2,0.6,0.25,1,shape,1.0,False,False,False,entity_test_0002,rel_test_0005
+sample_test_0002,test,org_chart,PPTX-LIKE SLIDE,ann_test_0008,PERSON,Lucas Lindgren,Lucas Lindgren,0.45,0.4,0.65,0.45,1,shape,1.0,False,False,False,entity_test_0003,rel_test_0003;rel_test_0004
+sample_test_0002,test,org_chart,PPTX-LIKE SLIDE,ann_test_0009,EMPLOYEE_ID,EMP-30920,EMP-30920,0.45,0.5,0.62,0.55,1,shape,1.0,False,False,False,entity_test_0003,
+sample_test_0002,test,org_chart,PPTX-LIKE SLIDE,ann_test_0010,PERSON,Gaurav Sen,Gaurav Sen,0.45,0.7,0.65,0.75,1,shape,1.0,False,False,False,entity_test_0004,rel_test_0004
+sample_test_0002,test,org_chart,PPTX-LIKE SLIDE,ann_test_0011,EMPLOYEE_ID,EMP-30921,EMP-30921,0.45,0.78,0.62,0.83,1,shape,1.0,False,False,False,entity_test_0004,
+sample_test_0003,test,entity_resolution,PDF-LIKE PAGE,ann_test_0012,PERSON,Farhan Qureshi,Farhan Qureshi,0.35,0.15,0.6,0.2,1,native_text,1.0,False,False,False,entity_test_0005,rel_test_0006
+sample_test_0003,test,entity_resolution,PDF-LIKE PAGE,ann_test_0013,EMAIL,farhan.qureshi@example.com,farhan.qureshi@example.com,0.72,0.15,0.95,0.2,1,native_text,1.0,False,False,False,entity_test_0005,
+sample_test_0003,test,entity_resolution,PDF-LIKE PAGE,ann_test_0014,PERSON,F. Qureshi,Farhan Qureshi,0.42,0.3,0.62,0.35,1,native_text,1.0,False,False,False,entity_test_0005,rel_test_0006
+sample_test_0003,test,entity_resolution,PDF-LIKE PAGE,ann_test_0015,EMPLOYEE_ID,EMP-30919,EMP-30919,0.72,0.3,0.9,0.35,1,native_text,1.0,False,False,False,entity_test_0005,
+sample_test_0004,test,indirect_context,DOCX-LIKE PAGE,ann_test_0016,EMPLOYEE_ID,EMP-30999,EMP-30999,0.25,0.14,0.45,0.18,1,native_text,1.0,False,False,False,entity_test_0006,rel_test_0007;rel_test_0008
+sample_test_0004,test,indirect_context,DOCX-LIKE PAGE,ann_test_0017,PERSON,Manish Sisodia,Manish Sisodia,0.4,0.22,0.65,0.26,1,native_text,1.0,False,False,False,entity_test_0007,rel_test_0007
+sample_test_0004,test,indirect_context,DOCX-LIKE PAGE,ann_test_0018,SECRET,b1e2d3c4a5f6e7d8c9b0a1f2e3d4c5b6,b1e2d3c4a5f6e7d8c9b0a1f2e3d4c5b6,0.42,0.28,0.9,0.32,1,native_text,1.0,False,False,False,entity_test_0006,rel_test_0008

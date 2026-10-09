@@ -1,0 +1,152 @@
+{
+  "sample_id": "sample_test_0003",
+  "split": "test",
+  "category": "entity_resolution",
+  "document_modality": "PDF-LIKE PAGE",
+  "text_content": "Memo prepared by Farhan Qureshi, reachable at farhan.qureshi@example.com.\nApproved and countersigned by F. Qureshi (Badge: EMP-30919).",
+  "document_info": {
+    "document_title": "Executive Signature Memorandum",
+    "file_type": "pdf",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_test_0005",
+      "sample_id": "sample_test_0003",
+      "block_type": "paragraph",
+      "text": "Memo prepared by Farhan Qureshi, reachable at farhan.qureshi@example.com.",
+      "bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.25
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_test_0006",
+      "sample_id": "sample_test_0003",
+      "block_type": "paragraph",
+      "text": "Approved and countersigned by F. Qureshi (Badge: EMP-30919).",
+      "bbox": [
+        0.05,
+        0.3,
+        0.95,
+        0.4
+      ],
+      "page_or_slide": 1,
+      "order": 2,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_test_0012",
+      "sample_id": "sample_test_0003",
+      "pii_type": "PERSON",
+      "text": "Farhan Qureshi",
+      "normalized_text": "Farhan Qureshi",
+      "bbox": [
+        0.35,
+        0.15,
+        0.6,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0005",
+      "relationship_ids": [
+        "rel_test_0006"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0013",
+      "sample_id": "sample_test_0003",
+      "pii_type": "EMAIL",
+      "text": "farhan.qureshi@example.com",
+      "normalized_text": "farhan.qureshi@example.com",
+      "bbox": [
+        0.72,
+        0.15,
+        0.95,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0005",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_test_0014",
+      "sample_id": "sample_test_0003",
+      "pii_type": "PERSON",
+      "text": "F. Qureshi",
+      "normalized_text": "Farhan Qureshi",
+      "bbox": [
+        0.42,
+        0.3,
+        0.62,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0005",
+      "relationship_ids": [
+        "rel_test_0006"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0015",
+      "sample_id": "sample_test_0003",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-30919",
+      "normalized_text": "EMP-30919",
+      "bbox": [
+        0.72,
+        0.3,
+        0.9,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0005",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_test_0006",
+      "sample_id": "sample_test_0003",
+      "source_annotation_id": "ann_test_0012",
+      "target_annotation_id": "ann_test_0014",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Variant name resolved via shared employee email/id context"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

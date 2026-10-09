@@ -1,0 +1,37 @@
+{
+  "sample_id": "sample_test_0005",
+  "split": "test",
+  "category": "hard_negative",
+  "document_modality": "TEXT",
+  "text_content": "Production Kubernetes cluster deployment relies on Amazon EKS security groups across standard TCP port 443.",
+  "document_info": {
+    "document_title": "Enterprise Architecture Whitepaper",
+    "file_type": "txt",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_test_0008",
+      "sample_id": "sample_test_0005",
+      "block_type": "paragraph",
+      "text": "Production Kubernetes cluster deployment relies on Amazon EKS security groups across standard TCP port 443.",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.4
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [],
+  "relationships": [],
+  "visuals": [],
+  "is_hard_negative": true,
+  "metadata": {}
+}

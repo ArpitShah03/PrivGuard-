@@ -1,0 +1,152 @@
+{
+  "sample_id": "sample_train_0010",
+  "split": "train",
+  "category": "entity_resolution",
+  "document_modality": "PDF-LIKE PAGE",
+  "text_content": "Memo prepared by Meera Joshi, reachable at meera.joshi@example.com.\nApproved and countersigned by M. Joshi (Badge: EMP-33219).",
+  "document_info": {
+    "document_title": "Executive Signature Memorandum",
+    "file_type": "pdf",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0018",
+      "sample_id": "sample_train_0010",
+      "block_type": "paragraph",
+      "text": "Memo prepared by Meera Joshi, reachable at meera.joshi@example.com.",
+      "bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.25
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0019",
+      "sample_id": "sample_train_0010",
+      "block_type": "paragraph",
+      "text": "Approved and countersigned by M. Joshi (Badge: EMP-33219).",
+      "bbox": [
+        0.05,
+        0.3,
+        0.95,
+        0.4
+      ],
+      "page_or_slide": 1,
+      "order": 2,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0043",
+      "sample_id": "sample_train_0010",
+      "pii_type": "PERSON",
+      "text": "Meera Joshi",
+      "normalized_text": "Meera Joshi",
+      "bbox": [
+        0.35,
+        0.15,
+        0.6,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0015",
+      "relationship_ids": [
+        "rel_train_0017"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0044",
+      "sample_id": "sample_train_0010",
+      "pii_type": "EMAIL",
+      "text": "meera.joshi@example.com",
+      "normalized_text": "meera.joshi@example.com",
+      "bbox": [
+        0.72,
+        0.15,
+        0.95,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0015",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0045",
+      "sample_id": "sample_train_0010",
+      "pii_type": "PERSON",
+      "text": "M. Joshi",
+      "normalized_text": "Meera Joshi",
+      "bbox": [
+        0.42,
+        0.3,
+        0.62,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0015",
+      "relationship_ids": [
+        "rel_train_0017"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0046",
+      "sample_id": "sample_train_0010",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-33219",
+      "normalized_text": "EMP-33219",
+      "bbox": [
+        0.72,
+        0.3,
+        0.9,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0015",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0017",
+      "sample_id": "sample_train_0010",
+      "source_annotation_id": "ann_train_0043",
+      "target_annotation_id": "ann_train_0045",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Variant name resolved via shared employee email/id context"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

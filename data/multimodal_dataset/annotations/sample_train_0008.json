@@ -1,0 +1,125 @@
+{
+  "sample_id": "sample_train_0008",
+  "split": "train",
+  "category": "indirect_context",
+  "document_modality": "DOCX-LIKE PAGE",
+  "text_content": "Privileged Access Audit:\nEmployee ID: EMP-44109\nAssigned Department: Treasury Audit Operations\nAuthorizing Manager: Amit Trivedi\nTemporary Vault Key: a8f9c2d1e0b4a7c9d3e5f1b29a8c7e6d",
+  "document_info": {
+    "document_title": "Privileged Access Request",
+    "file_type": "docx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0016",
+      "sample_id": "sample_train_0008",
+      "block_type": "paragraph",
+      "text": "Privileged Access Audit:\nEmployee ID: EMP-44109\nAssigned Department: Treasury Audit Operations\nAuthorizing Manager: Amit Trivedi\nTemporary Vault Key: a8f9c2d1e0b4a7c9d3e5f1b29a8c7e6d",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0037",
+      "sample_id": "sample_train_0008",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-44109",
+      "normalized_text": "EMP-44109",
+      "bbox": [
+        0.25,
+        0.14,
+        0.45,
+        0.18
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0010",
+      "relationship_ids": [
+        "rel_train_0015",
+        "rel_train_0016"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0038",
+      "sample_id": "sample_train_0008",
+      "pii_type": "PERSON",
+      "text": "Amit Trivedi",
+      "normalized_text": "Amit Trivedi",
+      "bbox": [
+        0.4,
+        0.22,
+        0.65,
+        0.26
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0011",
+      "relationship_ids": [
+        "rel_train_0015"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0039",
+      "sample_id": "sample_train_0008",
+      "pii_type": "SECRET",
+      "text": "a8f9c2d1e0b4a7c9d3e5f1b29a8c7e6d",
+      "normalized_text": "a8f9c2d1e0b4a7c9d3e5f1b29a8c7e6d",
+      "bbox": [
+        0.42,
+        0.28,
+        0.9,
+        0.32
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0010",
+      "relationship_ids": [
+        "rel_train_0016"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0015",
+      "sample_id": "sample_train_0008",
+      "source_annotation_id": "ann_train_0037",
+      "target_annotation_id": "ann_train_0038",
+      "relationship_type": "REPORTS_TO",
+      "evidence": "Indirect role linkage to supervising manager"
+    },
+    {
+      "relationship_id": "rel_train_0016",
+      "sample_id": "sample_train_0008",
+      "source_annotation_id": "ann_train_0037",
+      "target_annotation_id": "ann_train_0039",
+      "relationship_type": "BELONGS_TO",
+      "evidence": "Vault key issued to employee"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

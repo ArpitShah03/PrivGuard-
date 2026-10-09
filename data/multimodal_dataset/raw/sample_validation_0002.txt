@@ -1,0 +1,3 @@
+Employee Name | Corporate Email | Work Phone | Bank IFSC
+Devendra Joshi | devendra.joshi@example.com | +1-555-011-9928 | PUNB0001928
+Clara Schumann | clara.schumann@example.com | +1-555-011-4401 | BARB0003829

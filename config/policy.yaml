@@ -1,0 +1,164 @@
+# Declarative Enterprise Policy Configuration (policy.yaml)
+# Lightweight Policy Layer: PII policy, thresholds, file policy, uncertainty, and rescan gate.
+
+name: "Enterprise Default Data Security Policy"
+version: "1.0.0"
+description: "Zero-tolerance enterprise PII protection with fail-closed extraction gates and post-rescan verification."
+
+# Input / File Policy
+file_policy:
+  allowed_extensions: ["pdf", "docx", "pptx", "txt"]
+  max_file_size_mb: 25.0
+  on_unsupported_file: "BLOCKED"
+
+# Default Global Thresholds
+thresholds:
+  high_threshold: 0.70    # Calibrated confidence >= 0.70 -> DETECT
+  lower_threshold: 0.45   # Calibrated confidence >= 0.45 -> HUMAN_REVIEW; < 0.45 -> SUPPRESS
+
+# Extraction Coverage & Uncertainty Policy
+# STRICT SECURITY INVARIANT: on_extraction_uncertainty MUST be HUMAN_REVIEW or BLOCKED.
+uncertainty_policy:
+  require_100_coverage: true
+  on_extraction_uncertainty: "HUMAN_REVIEW"
+  uncertainty_reason: "Extraction coverage incomplete; uninspected blocks mandate human review"
+
+# Post-Redaction Re-Scan Verification Gate Policy
+gate_policy:
+  max_residual_allowed: 0
+  max_high_risk_residual_allowed: 0
+  on_high_risk_residual: "BLOCKED"
+  on_low_risk_residual: "HUMAN_REVIEW"
+  on_clean_rescan: "SAFE"
+
+# Redaction Formatting Behavior
+redaction_policy:
+  replacement_mode: "TOKEN"       # TOKEN ([PERSON_001]), MASK (***), or SYNTHETIC
+  preserve_structure: true
+
+# Entity-Level Rule Specifications
+# Actions: DETECT, HUMAN_REVIEW, BLOCK, ALLOW (permitted/ignored)
+# Note: ALLOW only means this specific entity type is not considered protected under current policy.
+# ALLOW never bypasses extraction uncertainty or re-scan residual failures.
+entity_rules:
+  # Critical Financial & Government Identifiers
+  CREDIT_CARD:
+    enabled: true
+    action: "DETECT"
+    severity: "CRITICAL"
+    min_confidence: 0.50
+    redaction_mode: "TOKEN"
+
+  SSN:
+    enabled: true
+    action: "DETECT"
+    severity: "CRITICAL"
+    min_confidence: 0.50
+    redaction_mode: "TOKEN"
+
+  SECRET:
+    enabled: true
+    action: "DETECT"
+    severity: "CRITICAL"
+    min_confidence: 0.60
+    redaction_mode: "TOKEN"
+
+  PAN:
+    enabled: true
+    action: "DETECT"
+    severity: "CRITICAL"
+    min_confidence: 0.50
+    redaction_mode: "TOKEN"
+
+  PESEL:
+    enabled: true
+    action: "DETECT"
+    severity: "CRITICAL"
+    min_confidence: 0.50
+    redaction_mode: "TOKEN"
+
+  PASSPORT:
+    enabled: true
+    action: "DETECT"
+    severity: "CRITICAL"
+    min_confidence: 0.60
+    redaction_mode: "TOKEN"
+
+  BANK_ACCOUNT:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.55
+    redaction_mode: "TOKEN"
+
+  IFSC:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.55
+    redaction_mode: "TOKEN"
+
+  # High Sensitivity Personal & Corporate Identity
+  PERSON:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.60
+    redaction_mode: "TOKEN"
+
+  EMAIL:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.50
+    redaction_mode: "TOKEN"
+
+  PHONE:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.55
+    redaction_mode: "TOKEN"
+
+  EMPLOYEE_ID:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.60
+    redaction_mode: "TOKEN"
+
+  DIRECTOR_ID:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.60
+    redaction_mode: "TOKEN"
+
+  VENDOR_ID:
+    enabled: true
+    action: "DETECT"
+    severity: "HIGH"
+    min_confidence: 0.60
+    redaction_mode: "TOKEN"
+
+  # Medium Sensitivity Contextual Data
+  DATE_OF_BIRTH:
+    enabled: true
+    action: "DETECT"
+    severity: "MEDIUM"
+    min_confidence: 0.70
+    redaction_mode: "TOKEN"
+
+  ADDRESS:
+    enabled: true
+    action: "DETECT"
+    severity: "MEDIUM"
+    min_confidence: 0.65
+    redaction_mode: "TOKEN"
+
+  CUSTOMER_ID:
+    enabled: true
+    action: "DETECT"
+    severity: "MEDIUM"
+    min_confidence: 0.65
+    redaction_mode: "TOKEN"

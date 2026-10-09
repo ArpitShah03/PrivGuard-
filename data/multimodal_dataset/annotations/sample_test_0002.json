@@ -1,0 +1,270 @@
+{
+  "sample_id": "sample_test_0002",
+  "split": "test",
+  "category": "org_chart",
+  "document_modality": "PPTX-LIKE SLIDE",
+  "text_content": "Chief Executive: Sunita Deshmukh\nEmail: sunita.deshmukh@example.com\nDIN: 03948572\n---\nVP Operations: Lucas Lindgren\nEmail: lucas.lindgren@example.com\nEmp ID: EMP-30920\n---\nLead Architect: Gaurav Sen\nEmp ID: EMP-30921",
+  "document_info": {
+    "document_title": "Corporate Governance Chart",
+    "file_type": "pptx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_test_0002",
+      "sample_id": "sample_test_0002",
+      "block_type": "shape",
+      "text": "Chief Executive: Sunita Deshmukh\nEmail: sunita.deshmukh@example.com\nDIN: 03948572",
+      "bbox": [
+        0.35,
+        0.1,
+        0.65,
+        0.25
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_test_0003",
+      "sample_id": "sample_test_0002",
+      "block_type": "shape",
+      "text": "VP Operations: Lucas Lindgren\nEmail: lucas.lindgren@example.com\nEmp ID: EMP-30920",
+      "bbox": [
+        0.35,
+        0.4,
+        0.65,
+        0.55
+      ],
+      "page_or_slide": 1,
+      "order": 2,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_test_0004",
+      "sample_id": "sample_test_0002",
+      "block_type": "shape",
+      "text": "Lead Architect: Gaurav Sen\nEmp ID: EMP-30921",
+      "bbox": [
+        0.35,
+        0.7,
+        0.65,
+        0.85
+      ],
+      "page_or_slide": 1,
+      "order": 3,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_test_0005",
+      "sample_id": "sample_test_0002",
+      "pii_type": "PERSON",
+      "text": "Sunita Deshmukh",
+      "normalized_text": "Sunita Deshmukh",
+      "bbox": [
+        0.45,
+        0.1,
+        0.65,
+        0.15
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0002",
+      "relationship_ids": [
+        "rel_test_0003",
+        "rel_test_0005"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0006",
+      "sample_id": "sample_test_0002",
+      "pii_type": "EMAIL",
+      "text": "sunita.deshmukh@example.com",
+      "normalized_text": "sunita.deshmukh@example.com",
+      "bbox": [
+        0.42,
+        0.15,
+        0.65,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0002",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_test_0007",
+      "sample_id": "sample_test_0002",
+      "pii_type": "DIRECTOR_ID",
+      "text": "03948572",
+      "normalized_text": "03948572",
+      "bbox": [
+        0.42,
+        0.2,
+        0.6,
+        0.25
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0002",
+      "relationship_ids": [
+        "rel_test_0005"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0008",
+      "sample_id": "sample_test_0002",
+      "pii_type": "PERSON",
+      "text": "Lucas Lindgren",
+      "normalized_text": "Lucas Lindgren",
+      "bbox": [
+        0.45,
+        0.4,
+        0.65,
+        0.45
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0003",
+      "relationship_ids": [
+        "rel_test_0003",
+        "rel_test_0004"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0009",
+      "sample_id": "sample_test_0002",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-30920",
+      "normalized_text": "EMP-30920",
+      "bbox": [
+        0.45,
+        0.5,
+        0.62,
+        0.55
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0003",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_test_0010",
+      "sample_id": "sample_test_0002",
+      "pii_type": "PERSON",
+      "text": "Gaurav Sen",
+      "normalized_text": "Gaurav Sen",
+      "bbox": [
+        0.45,
+        0.7,
+        0.65,
+        0.75
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0004",
+      "relationship_ids": [
+        "rel_test_0004"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0011",
+      "sample_id": "sample_test_0002",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-30921",
+      "normalized_text": "EMP-30921",
+      "bbox": [
+        0.45,
+        0.78,
+        0.62,
+        0.83
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0004",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_test_0003",
+      "sample_id": "sample_test_0002",
+      "source_annotation_id": "ann_test_0005",
+      "target_annotation_id": "ann_test_0008",
+      "relationship_type": "MANAGES",
+      "evidence": "Org hierarchy tree link CEO -> VP"
+    },
+    {
+      "relationship_id": "rel_test_0004",
+      "sample_id": "sample_test_0002",
+      "source_annotation_id": "ann_test_0010",
+      "target_annotation_id": "ann_test_0008",
+      "relationship_type": "REPORTS_TO",
+      "evidence": "Lead architect reports to VP Operations"
+    },
+    {
+      "relationship_id": "rel_test_0005",
+      "sample_id": "sample_test_0002",
+      "source_annotation_id": "ann_test_0005",
+      "target_annotation_id": "ann_test_0007",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Director ID belongs to CEO"
+    }
+  ],
+  "visuals": [
+    {
+      "visual_id": "vis_test_0001",
+      "sample_id": "sample_test_0002",
+      "visual_type": "diagram",
+      "bbox": [
+        0.3,
+        0.08,
+        0.7,
+        0.9
+      ],
+      "page_or_slide": 1,
+      "has_embedded_text": true,
+      "ocr_confidence": 1.0,
+      "metadata": {}
+    }
+  ],
+  "is_hard_negative": false,
+  "metadata": {}
+}

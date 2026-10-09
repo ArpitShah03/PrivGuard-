@@ -1,0 +1,114 @@
+{
+  "sample_id": "sample_train_0019",
+  "split": "train",
+  "category": "plain_text",
+  "document_modality": "TEXT",
+  "text_content": "Executive Pooja Hegde, born on 1987-04-12, currently lives at 45 Residency Road, Bangalore.",
+  "document_info": {
+    "document_title": "Executive Biographical Summary",
+    "file_type": "txt",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0033",
+      "sample_id": "sample_train_0019",
+      "block_type": "paragraph",
+      "text": "Executive Pooja Hegde, born on 1987-04-12, currently lives at 45 Residency Road, Bangalore.",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.25
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0084",
+      "sample_id": "sample_train_0019",
+      "pii_type": "PERSON",
+      "text": "Pooja Hegde",
+      "normalized_text": "Pooja Hegde",
+      "bbox": [
+        0.15,
+        0.1,
+        0.35,
+        0.15
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0025",
+      "relationship_ids": [
+        "rel_train_0033"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0085",
+      "sample_id": "sample_train_0019",
+      "pii_type": "DOB",
+      "text": "1987-04-12",
+      "normalized_text": "1987-04-12",
+      "bbox": [
+        0.45,
+        0.1,
+        0.65,
+        0.15
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0025",
+      "relationship_ids": [
+        "rel_train_0033"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0086",
+      "sample_id": "sample_train_0019",
+      "pii_type": "ADDRESS",
+      "text": "45 Residency Road, Bangalore",
+      "normalized_text": "45 Residency Road, Bangalore",
+      "bbox": [
+        0.3,
+        0.18,
+        0.85,
+        0.23
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0025",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0033",
+      "sample_id": "sample_train_0019",
+      "source_annotation_id": "ann_train_0084",
+      "target_annotation_id": "ann_train_0085",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Birth date attribute for executive"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

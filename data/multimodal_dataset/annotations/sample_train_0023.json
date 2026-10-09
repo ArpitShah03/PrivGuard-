@@ -1,0 +1,37 @@
+{
+  "sample_id": "sample_train_0023",
+  "split": "train",
+  "category": "hard_negative",
+  "document_modality": "TEXT",
+  "text_content": "Database exception code 123456 triggered during query execution on table sys_audit_events.",
+  "document_info": {
+    "document_title": "Technical Error Log",
+    "file_type": "txt",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0037",
+      "sample_id": "sample_train_0023",
+      "block_type": "paragraph",
+      "text": "Database exception code 123456 triggered during query execution on table sys_audit_events.",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.4
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [],
+  "relationships": [],
+  "visuals": [],
+  "is_hard_negative": true,
+  "metadata": {}
+}

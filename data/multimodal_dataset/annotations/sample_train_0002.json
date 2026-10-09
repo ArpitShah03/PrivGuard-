@@ -1,0 +1,427 @@
+{
+  "sample_id": "sample_train_0002",
+  "split": "train",
+  "category": "tabular",
+  "document_modality": "TABLE",
+  "text_content": "Employee Name | Corporate Email | Work Phone | Bank IFSC\nKavita Patel | kavita.patel@example.com | +1-555-019-3329 | HDFC0004123\nAarav Sen | aarav.sen@example.com | +1-555-019-8812 | ICIC0001928\nPriya Nair | priya.nair@example.com | +1-555-019-5501 | SBIN0008821",
+  "document_info": {
+    "document_title": "Vendor Disbursement Payroll Table",
+    "file_type": "docx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0002",
+      "sample_id": "sample_train_0002",
+      "block_type": "table_cell",
+      "text": "Employee Name | Corporate Email | Work Phone | Bank IFSC",
+      "bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0003",
+      "sample_id": "sample_train_0002",
+      "block_type": "table_cell",
+      "text": "Kavita Patel | kavita.patel@example.com | +1-555-019-3329 | HDFC0004123",
+      "bbox": [
+        0.05,
+        0.22,
+        0.95,
+        0.28
+      ],
+      "page_or_slide": 1,
+      "order": 2,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0004",
+      "sample_id": "sample_train_0002",
+      "block_type": "table_cell",
+      "text": "Aarav Sen | aarav.sen@example.com | +1-555-019-8812 | ICIC0001928",
+      "bbox": [
+        0.05,
+        0.3,
+        0.95,
+        0.36
+      ],
+      "page_or_slide": 1,
+      "order": 3,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0005",
+      "sample_id": "sample_train_0002",
+      "block_type": "table_cell",
+      "text": "Priya Nair | priya.nair@example.com | +1-555-019-5501 | SBIN0008821",
+      "bbox": [
+        0.05,
+        0.38,
+        0.95,
+        0.44
+      ],
+      "page_or_slide": 1,
+      "order": 4,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0005",
+      "sample_id": "sample_train_0002",
+      "pii_type": "PERSON",
+      "text": "Kavita Patel",
+      "normalized_text": "Kavita Patel",
+      "bbox": [
+        0.05,
+        0.22,
+        0.28,
+        0.28
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0002",
+      "relationship_ids": [
+        "rel_train_0003",
+        "rel_train_0004"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0006",
+      "sample_id": "sample_train_0002",
+      "pii_type": "EMAIL",
+      "text": "kavita.patel@example.com",
+      "normalized_text": "kavita.patel@example.com",
+      "bbox": [
+        0.3,
+        0.22,
+        0.55,
+        0.28
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0002",
+      "relationship_ids": [
+        "rel_train_0003"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0007",
+      "sample_id": "sample_train_0002",
+      "pii_type": "PHONE",
+      "text": "+1-555-019-3329",
+      "normalized_text": "+1-555-019-3329",
+      "bbox": [
+        0.58,
+        0.22,
+        0.78,
+        0.28
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0002",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0008",
+      "sample_id": "sample_train_0002",
+      "pii_type": "IFSC",
+      "text": "HDFC0004123",
+      "normalized_text": "HDFC0004123",
+      "bbox": [
+        0.8,
+        0.22,
+        0.95,
+        0.28
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0002",
+      "relationship_ids": [
+        "rel_train_0004"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0009",
+      "sample_id": "sample_train_0002",
+      "pii_type": "PERSON",
+      "text": "Aarav Sen",
+      "normalized_text": "Aarav Sen",
+      "bbox": [
+        0.05,
+        0.3,
+        0.28,
+        0.36
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0003",
+      "relationship_ids": [
+        "rel_train_0005",
+        "rel_train_0006"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0010",
+      "sample_id": "sample_train_0002",
+      "pii_type": "EMAIL",
+      "text": "aarav.sen@example.com",
+      "normalized_text": "aarav.sen@example.com",
+      "bbox": [
+        0.3,
+        0.3,
+        0.55,
+        0.36
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0003",
+      "relationship_ids": [
+        "rel_train_0005"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0011",
+      "sample_id": "sample_train_0002",
+      "pii_type": "PHONE",
+      "text": "+1-555-019-8812",
+      "normalized_text": "+1-555-019-8812",
+      "bbox": [
+        0.58,
+        0.3,
+        0.78,
+        0.36
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0003",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0012",
+      "sample_id": "sample_train_0002",
+      "pii_type": "IFSC",
+      "text": "ICIC0001928",
+      "normalized_text": "ICIC0001928",
+      "bbox": [
+        0.8,
+        0.3,
+        0.95,
+        0.36
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0003",
+      "relationship_ids": [
+        "rel_train_0006"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0013",
+      "sample_id": "sample_train_0002",
+      "pii_type": "PERSON",
+      "text": "Priya Nair",
+      "normalized_text": "Priya Nair",
+      "bbox": [
+        0.05,
+        0.38,
+        0.28,
+        0.44
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0004",
+      "relationship_ids": [
+        "rel_train_0007",
+        "rel_train_0008"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0014",
+      "sample_id": "sample_train_0002",
+      "pii_type": "EMAIL",
+      "text": "priya.nair@example.com",
+      "normalized_text": "priya.nair@example.com",
+      "bbox": [
+        0.3,
+        0.38,
+        0.55,
+        0.44
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0004",
+      "relationship_ids": [
+        "rel_train_0007"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0015",
+      "sample_id": "sample_train_0002",
+      "pii_type": "PHONE",
+      "text": "+1-555-019-5501",
+      "normalized_text": "+1-555-019-5501",
+      "bbox": [
+        0.58,
+        0.38,
+        0.78,
+        0.44
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0004",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0016",
+      "sample_id": "sample_train_0002",
+      "pii_type": "IFSC",
+      "text": "SBIN0008821",
+      "normalized_text": "SBIN0008821",
+      "bbox": [
+        0.8,
+        0.38,
+        0.95,
+        0.44
+      ],
+      "page_or_slide": 1,
+      "source": "table",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0004",
+      "relationship_ids": [
+        "rel_train_0008"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0003",
+      "sample_id": "sample_train_0002",
+      "source_annotation_id": "ann_train_0005",
+      "target_annotation_id": "ann_train_0006",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Table row entity alignment"
+    },
+    {
+      "relationship_id": "rel_train_0004",
+      "sample_id": "sample_train_0002",
+      "source_annotation_id": "ann_train_0005",
+      "target_annotation_id": "ann_train_0008",
+      "relationship_type": "ASSOCIATED_WITH",
+      "evidence": "Remittance banking info for employee"
+    },
+    {
+      "relationship_id": "rel_train_0005",
+      "sample_id": "sample_train_0002",
+      "source_annotation_id": "ann_train_0009",
+      "target_annotation_id": "ann_train_0010",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Table row entity alignment"
+    },
+    {
+      "relationship_id": "rel_train_0006",
+      "sample_id": "sample_train_0002",
+      "source_annotation_id": "ann_train_0009",
+      "target_annotation_id": "ann_train_0012",
+      "relationship_type": "ASSOCIATED_WITH",
+      "evidence": "Remittance banking info for employee"
+    },
+    {
+      "relationship_id": "rel_train_0007",
+      "sample_id": "sample_train_0002",
+      "source_annotation_id": "ann_train_0013",
+      "target_annotation_id": "ann_train_0014",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Table row entity alignment"
+    },
+    {
+      "relationship_id": "rel_train_0008",
+      "sample_id": "sample_train_0002",
+      "source_annotation_id": "ann_train_0013",
+      "target_annotation_id": "ann_train_0016",
+      "relationship_type": "ASSOCIATED_WITH",
+      "evidence": "Remittance banking info for employee"
+    }
+  ],
+  "visuals": [
+    {
+      "visual_id": "vis_train_0001",
+      "sample_id": "sample_train_0002",
+      "visual_type": "table_grid",
+      "bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.45999999999999996
+      ],
+      "page_or_slide": 1,
+      "has_embedded_text": true,
+      "ocr_confidence": 1.0,
+      "metadata": {}
+    }
+  ],
+  "is_hard_negative": false,
+  "metadata": {}
+}

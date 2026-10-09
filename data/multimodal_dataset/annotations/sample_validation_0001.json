@@ -1,0 +1,146 @@
+{
+  "sample_id": "sample_validation_0001",
+  "split": "validation",
+  "category": "plain_text",
+  "document_modality": "TEXT",
+  "text_content": "Ananya Roy can be contacted at ananya.roy@example.com or +1-555-011-8273. Official SSN on record is 666-32-1192.",
+  "document_info": {
+    "document_title": "Personnel Verification Note",
+    "file_type": "txt",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_validation_0001",
+      "sample_id": "sample_validation_0001",
+      "block_type": "paragraph",
+      "text": "Ananya Roy can be contacted at ananya.roy@example.com or +1-555-011-8273. Official SSN on record is 666-32-1192.",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_validation_0001",
+      "sample_id": "sample_validation_0001",
+      "pii_type": "PERSON",
+      "text": "Ananya Roy",
+      "normalized_text": "Ananya Roy",
+      "bbox": [
+        0.05,
+        0.1,
+        0.25,
+        0.14
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_validation_0001",
+      "relationship_ids": [
+        "rel_validation_0001",
+        "rel_validation_0002"
+      ]
+    },
+    {
+      "annotation_id": "ann_validation_0002",
+      "sample_id": "sample_validation_0001",
+      "pii_type": "EMAIL",
+      "text": "ananya.roy@example.com",
+      "normalized_text": "ananya.roy@example.com",
+      "bbox": [
+        0.4,
+        0.1,
+        0.65,
+        0.14
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_validation_0001",
+      "relationship_ids": [
+        "rel_validation_0001"
+      ]
+    },
+    {
+      "annotation_id": "ann_validation_0003",
+      "sample_id": "sample_validation_0001",
+      "pii_type": "PHONE",
+      "text": "+1-555-011-8273",
+      "normalized_text": "+1-555-011-8273",
+      "bbox": [
+        0.7,
+        0.1,
+        0.9,
+        0.14
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_validation_0001",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_validation_0004",
+      "sample_id": "sample_validation_0001",
+      "pii_type": "SSN",
+      "text": "666-32-1192",
+      "normalized_text": "666-32-1192",
+      "bbox": [
+        0.35,
+        0.15,
+        0.55,
+        0.19
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_validation_0001",
+      "relationship_ids": [
+        "rel_validation_0002"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_validation_0001",
+      "sample_id": "sample_validation_0001",
+      "source_annotation_id": "ann_validation_0001",
+      "target_annotation_id": "ann_validation_0002",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Identified in same personal statement"
+    },
+    {
+      "relationship_id": "rel_validation_0002",
+      "sample_id": "sample_validation_0001",
+      "source_annotation_id": "ann_validation_0001",
+      "target_annotation_id": "ann_validation_0004",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Identity to SSN linkage"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

@@ -1,0 +1,93 @@
+{
+  "sample_id": "sample_train_0026",
+  "split": "train",
+  "category": "financial_banking",
+  "document_modality": "TEXT",
+  "text_content": "Billing authorization: Sandeep Reddy registered corporate credit card 4532-0150-1234-5678.",
+  "document_info": {
+    "document_title": "Corporate Travel Card Registration",
+    "file_type": "txt",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0040",
+      "sample_id": "sample_train_0026",
+      "block_type": "paragraph",
+      "text": "Billing authorization: Sandeep Reddy registered corporate credit card 4532-0150-1234-5678.",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.25
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0087",
+      "sample_id": "sample_train_0026",
+      "pii_type": "PERSON",
+      "text": "Sandeep Reddy",
+      "normalized_text": "Sandeep Reddy",
+      "bbox": [
+        0.25,
+        0.1,
+        0.45,
+        0.15
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0026",
+      "relationship_ids": [
+        "rel_train_0034"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0088",
+      "sample_id": "sample_train_0026",
+      "pii_type": "CREDIT_CARD",
+      "text": "4532-0150-1234-5678",
+      "normalized_text": "4532-0150-1234-5678",
+      "bbox": [
+        0.65,
+        0.1,
+        0.95,
+        0.15
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0026",
+      "relationship_ids": [
+        "rel_train_0034"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0034",
+      "sample_id": "sample_train_0026",
+      "source_annotation_id": "ann_train_0087",
+      "target_annotation_id": "ann_train_0088",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Corporate card assigned to individual"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

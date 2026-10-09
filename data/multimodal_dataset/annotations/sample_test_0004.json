@@ -1,0 +1,125 @@
+{
+  "sample_id": "sample_test_0004",
+  "split": "test",
+  "category": "indirect_context",
+  "document_modality": "DOCX-LIKE PAGE",
+  "text_content": "Privileged Access Audit:\nEmployee ID: EMP-30999\nAssigned Department: Enterprise Cloud Vault\nAuthorizing Manager: Manish Sisodia\nTemporary Vault Key: b1e2d3c4a5f6e7d8c9b0a1f2e3d4c5b6",
+  "document_info": {
+    "document_title": "Privileged Access Request",
+    "file_type": "docx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_test_0007",
+      "sample_id": "sample_test_0004",
+      "block_type": "paragraph",
+      "text": "Privileged Access Audit:\nEmployee ID: EMP-30999\nAssigned Department: Enterprise Cloud Vault\nAuthorizing Manager: Manish Sisodia\nTemporary Vault Key: b1e2d3c4a5f6e7d8c9b0a1f2e3d4c5b6",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_test_0016",
+      "sample_id": "sample_test_0004",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-30999",
+      "normalized_text": "EMP-30999",
+      "bbox": [
+        0.25,
+        0.14,
+        0.45,
+        0.18
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0006",
+      "relationship_ids": [
+        "rel_test_0007",
+        "rel_test_0008"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0017",
+      "sample_id": "sample_test_0004",
+      "pii_type": "PERSON",
+      "text": "Manish Sisodia",
+      "normalized_text": "Manish Sisodia",
+      "bbox": [
+        0.4,
+        0.22,
+        0.65,
+        0.26
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0007",
+      "relationship_ids": [
+        "rel_test_0007"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0018",
+      "sample_id": "sample_test_0004",
+      "pii_type": "SECRET",
+      "text": "b1e2d3c4a5f6e7d8c9b0a1f2e3d4c5b6",
+      "normalized_text": "b1e2d3c4a5f6e7d8c9b0a1f2e3d4c5b6",
+      "bbox": [
+        0.42,
+        0.28,
+        0.9,
+        0.32
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0006",
+      "relationship_ids": [
+        "rel_test_0008"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_test_0007",
+      "sample_id": "sample_test_0004",
+      "source_annotation_id": "ann_test_0016",
+      "target_annotation_id": "ann_test_0017",
+      "relationship_type": "REPORTS_TO",
+      "evidence": "Indirect role linkage to supervising manager"
+    },
+    {
+      "relationship_id": "rel_test_0008",
+      "sample_id": "sample_test_0004",
+      "source_annotation_id": "ann_test_0016",
+      "target_annotation_id": "ann_test_0018",
+      "relationship_type": "BELONGS_TO",
+      "evidence": "Vault key issued to employee"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

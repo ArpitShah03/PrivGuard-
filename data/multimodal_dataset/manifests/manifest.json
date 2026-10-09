@@ -1,0 +1,59 @@
+{
+  "dataset_version": "1.0.0",
+  "generator_version": "1.0.0",
+  "seed": 42,
+  "sample_count": 35,
+  "annotation_count": 119,
+  "pii_type_counts": {
+    "ADDRESS": 3,
+    "BANK_ACCOUNT": 1,
+    "CREDIT_CARD": 3,
+    "CUSTOMER_ID": 1,
+    "DIRECTOR_ID": 4,
+    "DOB": 1,
+    "EMAIL": 21,
+    "EMPLOYEE_ID": 14,
+    "IFSC": 7,
+    "PAN": 3,
+    "PASSPORT": 1,
+    "PERSON": 37,
+    "PESEL": 1,
+    "PHONE": 12,
+    "SECRET": 2,
+    "SSN": 7,
+    "VENDOR_ID": 1
+  },
+  "modality_counts": {
+    "DOCX-LIKE PAGE": 7,
+    "IMAGE/OCR": 4,
+    "PDF-LIKE PAGE": 4,
+    "PPTX-LIKE SLIDE": 4,
+    "TABLE": 3,
+    "TEXT": 13
+  },
+  "split_counts": {
+    "test": 5,
+    "train": 25,
+    "validation": 5
+  },
+  "category_counts": {
+    "corporate_identifiers": 1,
+    "entity_resolution": 3,
+    "financial_banking": 1,
+    "hard_negative": 8,
+    "indirect_context": 2,
+    "masked_pii": 2,
+    "metadata_pii": 1,
+    "national_financial": 1,
+    "ocr_noisy": 2,
+    "org_chart": 3,
+    "plain_text": 4,
+    "screenshot_ocr": 2,
+    "similar_names": 1,
+    "split_layout": 1,
+    "tabular": 3
+  },
+  "hard_negative_count": 8,
+  "hard_negative_ratio_pct": 22.86,
+  "zero_leakage_verified": true
+}

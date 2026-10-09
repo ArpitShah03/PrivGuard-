@@ -1,0 +1,4 @@
+Employee Name | Corporate Email | Work Phone | Bank IFSC
+Kavita Patel | kavita.patel@example.com | +1-555-019-3329 | HDFC0004123
+Aarav Sen | aarav.sen@example.com | +1-555-019-8812 | ICIC0001928
+Priya Nair | priya.nair@example.com | +1-555-019-5501 | SBIN0008821

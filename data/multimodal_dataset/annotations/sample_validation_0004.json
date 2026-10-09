@@ -1,0 +1,80 @@
+{
+  "sample_id": "sample_validation_0004",
+  "split": "validation",
+  "category": "ocr_noisy",
+  "document_modality": "IMAGE/OCR",
+  "text_content": "Scanned Record: Tax PAN ID AAACC998IM and Social Sec 666-3Z-II92 detected with optical noise.",
+  "document_info": {
+    "document_title": "Scanned National ID Verification",
+    "file_type": "pdf",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_validation_0007",
+      "sample_id": "sample_validation_0004",
+      "block_type": "paragraph",
+      "text": "Scanned Record: Tax PAN ID AAACC998IM and Social Sec 666-3Z-II92 detected with optical noise.",
+      "bbox": [
+        0.05,
+        0.2,
+        0.95,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": true,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_validation_0017",
+      "sample_id": "sample_validation_0004",
+      "pii_type": "PAN",
+      "text": "AAACC998IM",
+      "normalized_text": "AAACC9981M",
+      "bbox": [
+        0.25,
+        0.2,
+        0.48,
+        0.26
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": null,
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_validation_0018",
+      "sample_id": "sample_validation_0004",
+      "pii_type": "SSN",
+      "text": "666-3Z-II92",
+      "normalized_text": "666-32-1192",
+      "bbox": [
+        0.65,
+        0.2,
+        0.88,
+        0.26
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": null,
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

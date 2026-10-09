@@ -1,0 +1,131 @@
+{
+  "sample_id": "sample_train_0011",
+  "split": "train",
+  "category": "metadata_pii",
+  "document_modality": "DOCX-LIKE PAGE",
+  "text_content": "[METADATA]\nAuthor: Deepak Verma\nCreator: deepak.verma@example.com\nCompany: Cadence Enterprise Security\n[BODY]\nReview findings indicate third-party assessment completed without policy exceptions.",
+  "document_info": {
+    "document_title": "Quarterly Compliance Review",
+    "file_type": "docx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {
+      "author": "Deepak Verma",
+      "creator_email": "deepak.verma@example.com",
+      "company": "Cadence Enterprise Security"
+    }
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0020",
+      "sample_id": "sample_train_0011",
+      "block_type": "metadata",
+      "text": "Author: Deepak Verma",
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0021",
+      "sample_id": "sample_train_0011",
+      "block_type": "metadata",
+      "text": "Creator: deepak.verma@example.com",
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "page_or_slide": 1,
+      "order": 2,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0022",
+      "sample_id": "sample_train_0011",
+      "block_type": "paragraph",
+      "text": "Review findings indicate third-party assessment completed without policy exceptions.",
+      "bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "order": 3,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0047",
+      "sample_id": "sample_train_0011",
+      "pii_type": "PERSON",
+      "text": "Deepak Verma",
+      "normalized_text": "Deepak Verma",
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "page_or_slide": 1,
+      "source": "metadata",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0016",
+      "relationship_ids": [
+        "rel_train_0018"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0048",
+      "sample_id": "sample_train_0011",
+      "pii_type": "EMAIL",
+      "text": "deepak.verma@example.com",
+      "normalized_text": "deepak.verma@example.com",
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "page_or_slide": 1,
+      "source": "metadata",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0016",
+      "relationship_ids": [
+        "rel_train_0018"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0018",
+      "sample_id": "sample_train_0011",
+      "source_annotation_id": "ann_train_0047",
+      "target_annotation_id": "ann_train_0048",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Document author metadata pair"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

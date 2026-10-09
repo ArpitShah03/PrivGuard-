@@ -1,0 +1,114 @@
+{
+  "sample_id": "sample_train_0017",
+  "split": "train",
+  "category": "corporate_identifiers",
+  "document_modality": "DOCX-LIKE PAGE",
+  "text_content": "Vendor procurement agreement referencing VENDOR_ID: VEND-49201 and Customer Account: CUST-88102 with Director DIN: 01827364.",
+  "document_info": {
+    "document_title": "Master Services Procurement Agreement",
+    "file_type": "docx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0029",
+      "sample_id": "sample_train_0017",
+      "block_type": "paragraph",
+      "text": "Vendor procurement agreement referencing VENDOR_ID: VEND-49201 and Customer Account: CUST-88102 with Director DIN: 01827364.",
+      "bbox": [
+        0.05,
+        0.15,
+        0.95,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0073",
+      "sample_id": "sample_train_0017",
+      "pii_type": "VENDOR_ID",
+      "text": "VEND-49201",
+      "normalized_text": "VEND-49201",
+      "bbox": [
+        0.35,
+        0.15,
+        0.55,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0022",
+      "relationship_ids": [
+        "rel_train_0028"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0074",
+      "sample_id": "sample_train_0017",
+      "pii_type": "CUSTOMER_ID",
+      "text": "CUST-88102",
+      "normalized_text": "CUST-88102",
+      "bbox": [
+        0.7,
+        0.15,
+        0.9,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0022",
+      "relationship_ids": [
+        "rel_train_0028"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0075",
+      "sample_id": "sample_train_0017",
+      "pii_type": "DIRECTOR_ID",
+      "text": "01827364",
+      "normalized_text": "01827364",
+      "bbox": [
+        0.35,
+        0.25,
+        0.55,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0022",
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0028",
+      "sample_id": "sample_train_0017",
+      "source_annotation_id": "ann_train_0073",
+      "target_annotation_id": "ann_train_0074",
+      "relationship_type": "ASSOCIATED_WITH",
+      "evidence": "Vendor to customer contracting party linkage"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

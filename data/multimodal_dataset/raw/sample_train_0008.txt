@@ -1,0 +1,5 @@
+Privileged Access Audit:
+Employee ID: EMP-44109
+Assigned Department: Treasury Audit Operations
+Authorizing Manager: Amit Trivedi
+Temporary Vault Key: a8f9c2d1e0b4a7c9d3e5f1b29a8c7e6d

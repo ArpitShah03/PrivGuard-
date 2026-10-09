@@ -1,0 +1,1 @@
+Production Kubernetes cluster deployment relies on Amazon EKS security groups across standard TCP port 443.

@@ -1,0 +1,10 @@
+Chief Executive: Elena Rostova
+Email: elena.rostova@example.com
+DIN: 00928341
+---
+VP Operations: Rajesh Khanna
+Email: rkhanna@example.com
+Emp ID: EMP-77123
+---
+Lead Architect: Arjun Singhania
+Emp ID: EMP-66102

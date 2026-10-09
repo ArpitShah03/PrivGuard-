@@ -1,0 +1,80 @@
+{
+  "sample_id": "sample_train_0006",
+  "split": "train",
+  "category": "ocr_noisy",
+  "document_modality": "IMAGE/OCR",
+  "text_content": "Scanned Record: Tax PAN ID ABCPEI234K and Social Sec 000-4S-782I detected with optical noise.",
+  "document_info": {
+    "document_title": "Scanned National ID Verification",
+    "file_type": "pdf",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0014",
+      "sample_id": "sample_train_0006",
+      "block_type": "paragraph",
+      "text": "Scanned Record: Tax PAN ID ABCPEI234K and Social Sec 000-4S-782I detected with optical noise.",
+      "bbox": [
+        0.05,
+        0.2,
+        0.95,
+        0.35
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": true,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0032",
+      "sample_id": "sample_train_0006",
+      "pii_type": "PAN",
+      "text": "ABCPEI234K",
+      "normalized_text": "ABCPE1234K",
+      "bbox": [
+        0.25,
+        0.2,
+        0.48,
+        0.26
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": null,
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_train_0033",
+      "sample_id": "sample_train_0006",
+      "pii_type": "SSN",
+      "text": "000-4S-782I",
+      "normalized_text": "000-45-7821",
+      "bbox": [
+        0.65,
+        0.2,
+        0.88,
+        0.26
+      ],
+      "page_or_slide": 1,
+      "source": "OCR",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": null,
+      "relationship_ids": []
+    }
+  ],
+  "relationships": [],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

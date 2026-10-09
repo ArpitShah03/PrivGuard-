@@ -1,0 +1,84 @@
+{
+  "total_samples": 35,
+  "positive_samples": 27,
+  "negative_samples": 8,
+  "hard_negative_ratio_pct": 22.86,
+  "total_pii_annotations": 119,
+  "annotations_per_pii_type": {
+    "ADDRESS": 3,
+    "BANK_ACCOUNT": 1,
+    "CREDIT_CARD": 3,
+    "CUSTOMER_ID": 1,
+    "DIRECTOR_ID": 4,
+    "DOB": 1,
+    "EMAIL": 21,
+    "EMPLOYEE_ID": 14,
+    "IFSC": 7,
+    "PAN": 3,
+    "PASSPORT": 1,
+    "PERSON": 37,
+    "PESEL": 1,
+    "PHONE": 12,
+    "SECRET": 2,
+    "SSN": 7,
+    "VENDOR_ID": 1
+  },
+  "annotations_by_source": {
+    "OCR": 14,
+    "metadata": 2,
+    "native_text": 51,
+    "shape": 24,
+    "table": 28
+  },
+  "samples_by_modality": {
+    "DOCX-LIKE PAGE": 7,
+    "IMAGE/OCR": 4,
+    "PDF-LIKE PAGE": 4,
+    "PPTX-LIKE SLIDE": 4,
+    "TABLE": 3,
+    "TEXT": 13
+  },
+  "samples_by_split": {
+    "test": 5,
+    "train": 25,
+    "validation": 5
+  },
+  "samples_by_category": {
+    "corporate_identifiers": 1,
+    "entity_resolution": 3,
+    "financial_banking": 1,
+    "hard_negative": 8,
+    "indirect_context": 2,
+    "masked_pii": 2,
+    "metadata_pii": 1,
+    "national_financial": 1,
+    "ocr_noisy": 2,
+    "org_chart": 3,
+    "plain_text": 4,
+    "screenshot_ocr": 2,
+    "similar_names": 1,
+    "split_layout": 1,
+    "tabular": 3
+  },
+  "structural_metrics": {
+    "total_blocks": 56,
+    "total_relationships": 45,
+    "total_visuals": 8,
+    "relationships_by_type": {
+      "ASSOCIATED_WITH": 9,
+      "BELONGS_TO": 3,
+      "MANAGES": 3,
+      "REPORTS_TO": 5,
+      "SAME_ENTITY": 25
+    }
+  },
+  "edge_case_counts": {
+    "masked_pii": 6,
+    "indirect_pii": 0,
+    "partial_pii": 2,
+    "ocr_source_annotations": 14,
+    "table_cell_annotations": 28,
+    "shape_layout_annotations": 24,
+    "metadata_annotations": 2
+  }
+}

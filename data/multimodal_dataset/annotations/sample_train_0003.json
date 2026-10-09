@@ -1,0 +1,176 @@
+{
+  "sample_id": "sample_train_0003",
+  "split": "train",
+  "category": "split_layout",
+  "document_modality": "PPTX-LIKE SLIDE",
+  "text_content": "Marcus Vance\nEmployee ID: EMP-10291\nDivision: Cloud Platform Security",
+  "document_info": {
+    "document_title": "Leadership Card PPTX",
+    "file_type": "pptx",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_train_0006",
+      "sample_id": "sample_train_0003",
+      "block_type": "shape",
+      "text": "Marcus",
+      "bbox": [
+        0.1,
+        0.2,
+        0.3,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0007",
+      "sample_id": "sample_train_0003",
+      "block_type": "shape",
+      "text": "Vance",
+      "bbox": [
+        0.32,
+        0.2,
+        0.55,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "order": 2,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0008",
+      "sample_id": "sample_train_0003",
+      "block_type": "shape",
+      "text": "Employee ID: EMP-10291",
+      "bbox": [
+        0.1,
+        0.35,
+        0.5,
+        0.45
+      ],
+      "page_or_slide": 1,
+      "order": 3,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "blk_train_0009",
+      "sample_id": "sample_train_0003",
+      "block_type": "shape",
+      "text": "Division: Cloud Platform Security",
+      "bbox": [
+        0.1,
+        0.5,
+        0.45,
+        0.6
+      ],
+      "page_or_slide": 1,
+      "order": 4,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_train_0017",
+      "sample_id": "sample_train_0003",
+      "pii_type": "PERSON",
+      "text": "Marcus",
+      "normalized_text": "Marcus Vance",
+      "bbox": [
+        0.1,
+        0.2,
+        0.3,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": true,
+      "entity_id": "entity_train_0005",
+      "relationship_ids": [
+        "rel_train_0009",
+        "rel_train_0010"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0018",
+      "sample_id": "sample_train_0003",
+      "pii_type": "PERSON",
+      "text": "Vance",
+      "normalized_text": "Marcus Vance",
+      "bbox": [
+        0.32,
+        0.2,
+        0.55,
+        0.3
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": true,
+      "entity_id": "entity_train_0005",
+      "relationship_ids": [
+        "rel_train_0009"
+      ]
+    },
+    {
+      "annotation_id": "ann_train_0019",
+      "sample_id": "sample_train_0003",
+      "pii_type": "EMPLOYEE_ID",
+      "text": "EMP-10291",
+      "normalized_text": "EMP-10291",
+      "bbox": [
+        0.28,
+        0.35,
+        0.5,
+        0.45
+      ],
+      "page_or_slide": 1,
+      "source": "shape",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_train_0005",
+      "relationship_ids": [
+        "rel_train_0010"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_train_0009",
+      "sample_id": "sample_train_0003",
+      "source_annotation_id": "ann_train_0017",
+      "target_annotation_id": "ann_train_0018",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Split first name and surname across adjacent shapes"
+    },
+    {
+      "relationship_id": "rel_train_0010",
+      "sample_id": "sample_train_0003",
+      "source_annotation_id": "ann_train_0017",
+      "target_annotation_id": "ann_train_0019",
+      "relationship_type": "BELONGS_TO",
+      "evidence": "Shape grouping attaches employee ID to identity"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

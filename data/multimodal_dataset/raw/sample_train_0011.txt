@@ -1,0 +1,6 @@
+[METADATA]
+Author: Deepak Verma
+Creator: deepak.verma@example.com
+Company: Cadence Enterprise Security
+[BODY]
+Review findings indicate third-party assessment completed without policy exceptions.

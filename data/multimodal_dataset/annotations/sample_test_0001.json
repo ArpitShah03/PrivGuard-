@@ -1,0 +1,146 @@
+{
+  "sample_id": "sample_test_0001",
+  "split": "test",
+  "category": "plain_text",
+  "document_modality": "TEXT",
+  "text_content": "Rohan Kapoor can be contacted at rohan.kapoor@example.com or +1-555-012-9944. Official SSN on record is 900-44-8833.",
+  "document_info": {
+    "document_title": "Personnel Verification Note",
+    "file_type": "txt",
+    "total_pages_or_slides": 1,
+    "metadata_attributes": {}
+  },
+  "blocks": [
+    {
+      "block_id": "blk_test_0001",
+      "sample_id": "sample_test_0001",
+      "block_type": "paragraph",
+      "text": "Rohan Kapoor can be contacted at rohan.kapoor@example.com or +1-555-012-9944. Official SSN on record is 900-44-8833.",
+      "bbox": [
+        0.05,
+        0.1,
+        0.95,
+        0.2
+      ],
+      "page_or_slide": 1,
+      "order": 1,
+      "is_ocr": false,
+      "parent_id": null,
+      "metadata": {}
+    }
+  ],
+  "pii_annotations": [
+    {
+      "annotation_id": "ann_test_0001",
+      "sample_id": "sample_test_0001",
+      "pii_type": "PERSON",
+      "text": "Rohan Kapoor",
+      "normalized_text": "Rohan Kapoor",
+      "bbox": [
+        0.05,
+        0.1,
+        0.25,
+        0.14
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0001",
+      "relationship_ids": [
+        "rel_test_0001",
+        "rel_test_0002"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0002",
+      "sample_id": "sample_test_0001",
+      "pii_type": "EMAIL",
+      "text": "rohan.kapoor@example.com",
+      "normalized_text": "rohan.kapoor@example.com",
+      "bbox": [
+        0.4,
+        0.1,
+        0.65,
+        0.14
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0001",
+      "relationship_ids": [
+        "rel_test_0001"
+      ]
+    },
+    {
+      "annotation_id": "ann_test_0003",
+      "sample_id": "sample_test_0001",
+      "pii_type": "PHONE",
+      "text": "+1-555-012-9944",
+      "normalized_text": "+1-555-012-9944",
+      "bbox": [
+        0.7,
+        0.1,
+        0.9,
+        0.14
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0001",
+      "relationship_ids": []
+    },
+    {
+      "annotation_id": "ann_test_0004",
+      "sample_id": "sample_test_0001",
+      "pii_type": "SSN",
+      "text": "900-44-8833",
+      "normalized_text": "900-44-8833",
+      "bbox": [
+        0.35,
+        0.15,
+        0.55,
+        0.19
+      ],
+      "page_or_slide": 1,
+      "source": "native_text",
+      "confidence_ground_truth": 1.0,
+      "is_masked": false,
+      "is_indirect": false,
+      "is_partial": false,
+      "entity_id": "entity_test_0001",
+      "relationship_ids": [
+        "rel_test_0002"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_test_0001",
+      "sample_id": "sample_test_0001",
+      "source_annotation_id": "ann_test_0001",
+      "target_annotation_id": "ann_test_0002",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Identified in same personal statement"
+    },
+    {
+      "relationship_id": "rel_test_0002",
+      "sample_id": "sample_test_0001",
+      "source_annotation_id": "ann_test_0001",
+      "target_annotation_id": "ann_test_0004",
+      "relationship_type": "SAME_ENTITY",
+      "evidence": "Identity to SSN linkage"
+    }
+  ],
+  "visuals": [],
+  "is_hard_negative": false,
+  "metadata": {}
+}

@@ -1,0 +1,1 @@
+Database exception code 123456 triggered during query execution on table sys_audit_events.

@@ -1,0 +1,58 @@
+{
+  "TIER_A": {
+    "name": "Tier A: Det + spaCy (Phase 4)",
+    "metrics": {
+      "tp": 9,
+      "fp": 1,
+      "fn": 9,
+      "precision": 0.9,
+      "recall": 0.5,
+      "f1": 0.6429,
+      "tn": 1,
+      "ece": 0.4974,
+      "brier_score": 0.4407
+    }
+  },
+  "TIER_B": {
+    "name": "Tier B: Det + spaCy + Multimodal",
+    "metrics": {
+      "tp": 18,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 1,
+      "ece": 0.0216,
+      "brier_score": 0.0005
+    }
+  },
+  "TIER_C": {
+    "name": "Tier C: Det + spaCy + Context + Multimodal",
+    "metrics": {
+      "tp": 18,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 1,
+      "ece": 0.0216,
+      "brier_score": 0.0005
+    }
+  },
+  "TIER_D": {
+    "name": "Tier D: Full Fusion + Platt Calibration (Phase 5C)",
+    "metrics": {
+      "tp": 18,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 1,
+      "ece": 0.0467,
+      "brier_score": 0.0023
+    }
+  }
+}

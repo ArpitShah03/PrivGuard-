@@ -1,0 +1,6 @@
+[CRM PROFILE]
+Full Name: Nikhil Kamath
+Account Email: nikhil.kamath@example.com
+Phone: +1-555-019-1102
+Badge: EMP-90214
+Office: 77 Tech Park, Hyderabad

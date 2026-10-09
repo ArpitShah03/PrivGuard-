@@ -1,0 +1,10 @@
+Chief Executive: Alok Sharma
+Email: alok.sharma@example.com
+DIN: 01928374
+---
+VP Operations: Kiran Rao
+Email: kiran.rao@example.com
+Emp ID: EMP-81029
+---
+Lead Architect: Tanvi Shah
+Emp ID: EMP-71928
